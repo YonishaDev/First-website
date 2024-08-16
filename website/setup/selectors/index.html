@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+ <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+</head>
+<body>
+    <div id="uniqueElement">Content</div>
+
+    <div class="box">Content 1</div>
+    <div class="box">Content 2</div>
+
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <br>
+    <form action="">
+        <input type="text" placeholder="Enter Text">
+        <input type="password" placeholder="Enter Password">
+        <input type="text" name="username">
+        <input type="email" name="email">
+
+    </form>
+
+<a href="http://example.com">example</a>
+<a href="http://example.org">Example</a>
+
+<div class="container">
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+</div>
+
+
+<script>
+        // ID Selector
+        $('#uniqueElement').text('New content');
+
+        //class Selector
+        $('.box').css('background-color','yellow');
+
+        //Element selector
+        $('p').css('background-color','green');
+        $('p').hide();
+
+        //Attribute selector
+        $('[placeholder]').css('border','2px solid');
+
+        //value Selector
+        $('[name="username"]').val('default UserName');
+
+        //partial value Selector
+        $('a[href*="example"]').css('color','red');
+
+
+</script>
+</body>
+</html>

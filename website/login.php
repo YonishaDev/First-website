@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -53,7 +55,7 @@
                 </div>
               <div class="col-lg-5 col-md-5 col-12">
                 <h1>SIGN IN</h1>
-                <form class="mb-3">
+                <form class="mb-3" action="login-process.php" method="post">
                 
                   <input type="email" class="form-control" placeholder="Enter Your Email">
                   <input type="password" class="form-control" placeholder="Enter Your Password">
